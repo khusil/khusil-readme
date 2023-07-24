@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateMarkdown = require("./util/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown");
 
 const questions = [
     {
@@ -17,7 +17,7 @@ const questions = [
         name: "description",
         type: "input",
         message:
-          "Please provide a short description explaining the what, why, and how of your project.",
+          "Please provide a short description.",
         validate: function (response) {
           if (response.length === 0)
             return console.log("Please enter a valid project title.");
