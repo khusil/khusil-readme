@@ -66,10 +66,10 @@ function generateMarkdown(data) {
     tableOfContents += `
   * [Features](#features)
   `;
-  if (data.contributors.length !== 0)
-    tableOfContents += `
-  * [Contributing](#contributing)
-  `;
+  // if (data.contributors.length !== 0) 
+  //   tableOfContents += `
+  // * [Contributing](#contributing)
+  // `;
   if (data.tests.length !== 0)
     tableOfContents += `
   * [Testing](#testing)
@@ -119,11 +119,11 @@ ${renderLicenseSection(data.license)}
   ${data.features}
   `;
 
-  if (data.contributors.length !== 0)
-    markdown += `
-  ## Contributing
-  ${data.contributors}
-  `;
+  // if (data.contributors.length !== 0)
+  //   markdown += `
+  // ## Contributing
+  // ${data.contributors}
+  // `;
 
   if (data.tests.length !== 0)
     markdown += `

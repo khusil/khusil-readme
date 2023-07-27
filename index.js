@@ -7,22 +7,22 @@ const questions = [
         name: "title",
         type: "input",
         message: "What is the title of your project?",
-        validate: function (response) {
-          if (response.length === 0)
-            return console.log("Please enter a valid project title.");
-          return true;
-        },
+        // validate: function (response) {
+        //   if (response.length === 0)
+        //     return console.log("Please enter a valid project title.");
+        //   return true;
+        // },
       },
       {
         name: "description",
         type: "input",
         message:
           "Please provide a short description.",
-        validate: function (response) {
-          if (response.length === 0)
-            return console.log("Please enter a project name.");
-          return true;
-        },
+        // validate: function (response) {
+        //   if (response.length === 0)
+        //     return console.log("Please enter a project name.");
+        //   return true;
+        // },
       },
       {
         name: "installation",
@@ -70,11 +70,11 @@ const questions = [
         name: "github",
         type: "input",
         message: "What is your GitHub user?",
-        validate: function (response) {
-          if (response.length === 0)
-            return console.log("Please enter a valid GitHub username.");
-          return true;
-        },
+        // validate: function (response) {
+        //   if (response.length === 0)
+        //     return console.log("Please enter a valid GitHub username.");
+        //   return true;
+        // },
       },
       {
         name: "email",
