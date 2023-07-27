@@ -20,24 +20,24 @@ const questions = [
           "Please provide a short description.",
         validate: function (response) {
           if (response.length === 0)
-            return console.log("Please enter a valid project title.");
+            return console.log("Please enter a project name.");
           return true;
         },
       },
       {
         name: "installation",
         type: "input",
-        message: "What are the steps required to install your project?",
+        message: "steps required to install?",
       },
       {
         name: "usage",
         type: "input",
-        message: "Provide instructions and examples for use.",
+        message: "explain usage of app.",
       },
       {
         name: "credits",
         type: "input",
-        message: "List your collaborators, if any.",
+        message: "List your collaborators, if you worked in a team.",
       },
       {
         name: "license",
@@ -60,12 +60,7 @@ const questions = [
         type: "input",
         message: "List your features, if any.",
       },
-      {
-        name: "contributors",
-        type: "input",
-        message:
-          "If you would like others to contribute, please add guidelines here.",
-      },
+     
       {
         name: "tests",
         type: "input",
@@ -74,7 +69,7 @@ const questions = [
       {
         name: "github",
         type: "input",
-        message: "What is your GitHub username?",
+        message: "What is your GitHub user?",
         validate: function (response) {
           if (response.length === 0)
             return console.log("Please enter a valid GitHub username.");
@@ -84,7 +79,7 @@ const questions = [
       {
         name: "email",
         type: "input",
-        message: "Finally, what is your email address?",
+        message: "what is your email address?",
       },
     ];  
 
